@@ -1,0 +1,68 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --color-emerald: #035224;
+    --color-olive: #89AA3E;
+    --color-terracotta: #D4583D;
+    --color-sand: #EEE1D5;
+    --color-sand-light: #FAF7F2;
+    --color-gold: #C9A456;
+    --color-graphite: #121A14;
+    --color-muted: #667069;
+  }
+
+  body {
+    background-color: var(--color-sand-light);
+    color: var(--color-graphite);
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #035224;
+    color: #ffffff;
+  }
+}
+
+/* Custom smooth scroll and custom scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9C8B8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #89AA3E;
+}
+
+.text-stroke-emerald {
+  -webkit-text-stroke: 1px #035224;
+}
+
+.glass-nav {
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(3, 82, 36, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
